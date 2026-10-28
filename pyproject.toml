@@ -1,0 +1,19 @@
+[project]
+name = "tensile-test-analyzer"
+version = "1.0.0"
+description = "引張試験（応力-ひずみ）と AE データを解析する Streamlit アプリ"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["E501", "B905"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["tensile"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

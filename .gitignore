@@ -1,0 +1,16 @@
+# 秘密の設定（台帳・ドライブの合鍵）。GitHub に入れない
+.streamlit/secrets.toml
+*service-account*.json
+*credentials*.json
+
+# 研究データ（実データ）や解析結果のファイルは入れない（テストには、その場で作る作りもののデータを使う）
+data/
+*.xlsx
+*.zip
+
+# Python・ツールが自動で作るファイル
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
